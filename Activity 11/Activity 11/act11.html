@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Activity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+    <div class="container">
+        <div class="card">
+            <h2>For Loop</h2>
+            <div class="input-group">
+                <label>Enter number:</label>
+                <input type="number" id="forNum">
+            </div>
+            <div class="input-group">
+                <label>Enter text:</label>
+                <input type="text" id="forText">
+            </div>
+            <div class="buttons">
+                <button class="btn-show" onclick="runForLoop()">Show</button>
+                <button class="btn-clear" onclick="clearArea('forDisplay', ['forNum', 'forText'])">Clear</button>
+            </div>
+            <div id="forDisplay" class="display-area"></div>
+        </div>
+ 
+        <div class="card">
+            <h2>While Loop</h2>
+            <div class="input-group">
+                <label>Enter number:</label>
+                <input type="number" id="whileNum">
+            </div>
+            <div class="input-group">
+                <label>Enter text:</label>
+                <input type="text" id="whileText">
+            </div>
+            <div class="buttons">
+                <button class="btn-show" onclick="runWhileLoop()">Show</button>
+                <button class="btn-clear" onclick="clearArea('whileDisplay', ['whileNum', 'whileText'])">Clear</button>
+            </div>
+            <div id="whileDisplay" class="display-area"></div>
+        </div>
+ 
+        <div class="card">
+            <h2>Do-While Loop</h2>
+            <div class="input-group">
+                <label>Enter number:</label>
+                <input type="number" id="doWhileNum">
+            </div>
+            <div class="input-group">
+                <label>Enter text:</label>
+                <input type="text" id="doWhileText">
+            </div>
+            <div class="buttons">
+                <button class="btn-show" onclick="runDoWhileLoop()">Show</button>
+                <button class="btn-clear" onclick="clearArea('doWhileDisplay', ['doWhileNum', 'doWhileText'])">Clear</button>
+            </div>
+            <div id="doWhileDisplay" class="display-area"></div>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>

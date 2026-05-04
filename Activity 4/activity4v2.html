@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <form action="" method="post">
+        <h2>ACCESS TERMINAL</h2>
+
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="firstname" required></td>
+            </tr>
+
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lastname" required></td>
+            </tr>
+
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age"></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="other">Other
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="reading">Reading<br>
+                    <input type="checkbox" name="hobby" value="traveling">Traveling<br>
+                    <input type="checkbox" name="hobby" value="gaming">Gaming<br>
+                    <input type="checkbox" name="hobby" value="sports">Sports<br>
+                    <input type="checkbox" name="hobby" value="eating">Eating
+                </td>
+            </tr>
+
+            <tr>
+                <td>Year Level:</td>
+                <td>
+                    <select name="year-level">
+                        <option>1st Year</option>
+                        <option>2nd Year</option>
+                        <option>3rd Year</option>
+                        <option>4th Year</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="EXECUTE">
+                    <button type="reset">CLEAR</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

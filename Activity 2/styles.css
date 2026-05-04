@@ -1,0 +1,64 @@
+body {
+            margin: 0;
+            padding: 40px;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+            background-attachment: fixed;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Module Styling like the 'KEET CAFE' section */
+        .list-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 2px solid yellow; /* Accent line */
+            padding: 30px;
+            margin-bottom: 40px;
+            transition: 0.3s ease;
+        }
+
+        .list-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        h3 {
+            color: yellow;
+            font-size: 24px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 0, 0.2);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        ul, ol {
+            color: #e0e0e0;
+            font-size: 18px;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        /* Nested List Styling */
+        li ul {
+            font-size: 15px;
+            color: #aaaaaa;
+            margin-top: 5px;
+            list-style-type: '— '; /* Custom dash for sub-items */
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li::marker {
+            color: yellow;
+            font-weight: bold;
+        }
